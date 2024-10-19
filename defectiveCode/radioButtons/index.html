@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drink and Snack Selection</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <form>
+        <!-- Drinks -->
+        <h1>Drinks</h1>
+        <input type="radio" id="coke" name="drinks" value="Coke" onclick="drinkPriceCalculation()">
+        <label for="coke">Coke</label>
+
+        <input type="radio" id="pepsi" name="drinks" value="Pepsi" onclick="drinkPriceCalculation()">
+        <label for="pepsi">Pepsi</label>
+
+        <input type="radio" id="fanta" name="drinks" value="Fanta" onclick="drinkPriceCalculation()">
+        <label for="fanta">Fanta</label>
+
+        <input type="radio" id="drpepper" name="drinks" value="Dr Pepper" onclick="drinkPriceCalculation()">
+        <label for="drpepper">Dr Pepper</label>
+        <h2 id="drinkLabel">Selected Drink: </h2>
+        <h2 id="dprice">Price $</h2>
+
+        <!-- Snacks -->
+        <h1>Snacks</h1>
+        <input type="radio" id="chips" name="food" value="Chips" onclick="foodPriceCalculation()">
+        <label for="chips">Chips</label>
+
+        <input type="radio" id="cookies" name="food" value="Cookies" onclick="foodPriceCalculation()">
+        <label for="cookies">Cookies</label>
+
+        <input type="radio" id="fruits" name="food" value="Fruits" onclick="foodPriceCalculation()">
+        <label for="fruits">Fruits</label>
+
+        <input type="radio" id="nuts" name="food" value="Nuts" onclick="foodPriceCalculation()">
+        <label for="nuts">Nuts</label>
+        <h2 id="snackLabel">Selected Snack: </h2>
+        <h2 id="sprice">Price $</h2>
+    </form>
+    <h1 id="totalPrice">Hello</h1>  
+</body>
+</html> 

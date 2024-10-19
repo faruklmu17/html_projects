@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Cost Splitter</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <h1>Restaurant Cost Splitter</h1>
+
+    <label for="restaurantName">Type a restaurant name:</label>
+    <input type="text" id="restaurantName"><br><br>
+
+    <label for="mealCost">Total cost of the meal eaten in the restaurant ($):</label>
+    <input type="number" id="mealCost"  ><br><br>
+
+    <label>How many friends were there?</label><br>
+
+    <input type="radio" id="oneFriend" name="friends" value="1">
+    <label for="oneFriend">1</label><br>
+    <input type="radio" id="twoFriends" name="friends" value="2">
+    <label for="twoFriends">2</label><br>
+    <input type="radio" id="threeFriends" name="friends" value="3">
+    <label for="threeFriends">3</label><br><br>
+
+
+    <button onclick="calculateShare()">Calculate Share</button><br><br>
+    
+    <label id="result"></label><br><br>
+    <!-- Checking Friends Contribution -->
+    <div id="paidFullDiv" style="display: none;">
+        <h1>Who paid the full amount?</h1>
+        <input type="radio" name="payFullAmount" id="currentUserfullAmount">
+        <label for="payFullAmount">Current User</label>
+        <input type="radio" name="payFullAmount" id="otherFriendsfullAmount">
+        <label for="payFullAmount">Other Friends</label>
+        <br>
+        <br>
+        <input type="checkbox" name="1friend" id="1friend">
+        <label for="1friend">1 friend has paid</label>
+        <br>
+        <input type="checkbox" name="2friend" id="2friend">
+        <label for="2friend">2 friend has paid</label>
+        <br>
+        <input type="checkbox" name="3friend" id="3friend">
+        <label for="3friend">All friends have paid</label>
+    
+        <br>
+        <br>
+    </div>
+    
+
+   
+</body>
+</html> 

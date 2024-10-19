@@ -1,0 +1,22 @@
+<html>
+    <script src="script.js"></script>
+    <h1>Who paid the full amoun</h1>
+    <input type="radio" name="payFullAmount" id="currentUserfullAmount">
+    <label for="payFullAmount">Current User</label>
+    <input type="radio" name="payFullAmount" id="otherFriendsfullAmount">
+    <label for="payFullAmount">Other Friends</label>
+    <br>
+    <br>
+    <button id="currentUserConfirm" onclick="showCheckboxes()">Confirm?</button>
+    <br>
+    <div id="friendPay">
+        <p style="display: none;"> Friend 1 Pay?</p>
+        <input style="display: none;" type="checkbox" name="friendsCheck"> 
+        <br>
+        <p style="display: none;"> Friend 2 Pay?</p>
+        <input style="display: none;" type="checkbox" name="friendsCheck">
+        <br>
+        <p style="display: none;"> Friend 3 Pay?</p>
+        <input style="display: none;" type="checkbox" name="friendsCheck">
+    </div>
+</html>

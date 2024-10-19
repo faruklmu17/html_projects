@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Form</title>
+   
+    <script src="/script.js"></script>
+</head>
+<body>
+    <h1>Enhanced Form</h1>
+    <form id="userForm">
+       
+        <label for="fname">Name:</label>
+        <input type="text" id="name" name='fname' required>
+
+        <br></br>
+
+        <label>Age:</label>
+        <input type="number" id="age" name="age" min="0" required>
+
+        <br></br>
+        
+        <label for="email">Email:</label>
+        <input  type='email' id="email" name='email' required>
+        <br>
+       
+        <label for="favoriteColor">Favorite Color:</label>
+        <select id="color" required>
+            <option value="">Select a color</option>
+            <option value="Red">Red</option>
+            <option value="Green">Green</option>
+            <option value="Blue">Blue</option>
+            <option value="Yellow">Yellow</option>
+        </select>
+        <br>
+     <button type="submit">Submit</button>
+    </form>
+    <h2 id="greeting">Hello</h2>
+</body>
+</html>
